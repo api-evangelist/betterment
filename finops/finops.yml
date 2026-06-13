@@ -1,0 +1,52 @@
+name: Betterment Financial Operations (FinOps)
+description: >
+  Financial operations context for organizations integrating with Betterment data or building
+  applications that reference Betterment accounts. Betterment does not have a public API with
+  usage-based billing; API access is mediated through open banking aggregators or through
+  private partner agreements for the Betterment at Work (401k) product.
+url: https://www.betterment.com/pricing
+notes:
+  - There are no direct API usage fees charged by Betterment to third-party developers.
+  - End-user subscription costs (Digital at $5/mo flat or 0.25% AUM; Premium Advisory at 0.65% AUM)
+    are borne by Betterment customers, not integration partners.
+  - Aggregators such as Plaid charge their own per-call or per-linked-item fees; developers
+    building on top of Plaid to access Betterment data should budget for Plaid API costs
+    (e.g., ~$0.10-$1.50 per call depending on product).
+  - Betterment at Work (401k) employer pricing is custom and negotiated per plan; employers should
+    contact the Betterment at Work sales team for cost modeling.
+  - Open-source tools from Betterment Engineering (Delayed job queue, Alchemist Flutter testing,
+    Betterlint RuboCop cops, WebValve, TestTrack) are freely available on GitHub under open-source
+    licenses with no associated runtime costs.
+  - SIPC protection applies to Betterment investment accounts (up to $500,000 in securities).
+  - FDIC insurance applies to Betterment Cash Reserve and Checking accounts (up to $2,000,000
+    through program banks for Cash Reserve; $250,000 for Checking).
+  - ETF expense ratios within Betterment portfolios range from approximately 0.05% to 0.25%
+    annually; these are fund-level costs paid to ETF providers, separate from Betterment's
+    management fee.
+  - Outbound transfer fee of $75 per account applies when moving assets out of Betterment.
+cost_components:
+  - component: Betterment Management Fee (Digital)
+    cost: "0.25% AUM/year (or $5/month flat for balances under $24K)"
+    payer: End user
+  - component: Betterment Management Fee (Premium Advisory)
+    cost: "0.65% AUM/year"
+    payer: End user
+    minimum_balance_usd: 100000
+  - component: Plaid API Access (for data aggregation)
+    cost: "Variable; ~$0.10–$1.50 per API call depending on product"
+    payer: Developer / Integration Partner
+  - component: Betterment at Work Employer Plan
+    cost: Negotiated; contact sales
+    payer: Employer
+  - component: ETF Expense Ratios
+    cost: "~0.05%–0.25% AUM/year"
+    payer: End user (deducted from fund returns)
+  - component: Outbound Transfer
+    cost: "$75 per account"
+    payer: End user
+sources:
+  - https://www.betterment.com/pricing
+  - https://www.betterment.com/work/401k
+  - https://www.betterment.com/legal/data-aggregation-disclosure
+  - https://plaid.com/pricing/
+updated: "2026-06-13"

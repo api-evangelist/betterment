@@ -1,0 +1,77 @@
+name: Betterment Subscription Plans
+description: >
+  Betterment offers tiered pricing for automated investing and financial planning services.
+  Fees are assessed as either a flat monthly fee or an annual percentage of assets under
+  management (AUM), depending on account balance thresholds. Professional advisory plans
+  carry an additional management fee on top of the base digital plan rate.
+url: https://www.betterment.com/pricing
+plans:
+  - name: Digital (Flat Fee)
+    description: >
+      Entry-level automated investing with tax-loss harvesting, goal-based portfolio management,
+      and access to all core Betterment investment features. Applies when the account balance
+      is under $24,000 without a $200/month recurring deposit.
+    price: 5.00
+    unit: month
+    features:
+      - Automated portfolio management with rebalancing
+      - Tax-loss harvesting
+      - Goal-based investing (retirement, safety net, general)
+      - Cash Reserve (high-yield savings)
+      - Betterment Checking (no fees, ATM reimbursement)
+      - Self-directed investing (no wrap fee on self-directed assets)
+  - name: Digital (AUM-Based)
+    description: >
+      Standard AUM-based fee tier for accounts between $24,000 and $1,000,000 or accounts
+      with $200+ monthly recurring deposits.
+    price: 0.25
+    unit: year (% AUM)
+    features:
+      - All Digital Flat Fee features
+      - Percentage-based pricing that scales with account size
+      - Tax-loss harvesting on taxable accounts
+      - Automated rebalancing triggered by drift or dividends
+      - Access to socially responsible and climate-focused portfolios
+  - name: Premium Advisory
+    description: >
+      Full-service plan combining automated investing with unlimited access to Certified
+      Financial Planners (CFPs). Requires a minimum of $100,000 in eligible Betterment
+      investments.
+    price: 0.65
+    unit: year (% AUM)
+    minimum_balance_usd: 100000
+    features:
+      - All Digital plan features
+      - Unlimited 1-on-1 access to Certified Financial Planners (CFPs)
+      - Advice on assets held outside Betterment
+      - Comprehensive financial planning (tax, retirement, estate planning)
+  - name: Betterment at Work (401k)
+    description: >
+      Employer-sponsored 401(k) plan administration through the Betterment at Work product.
+      Pricing is negotiated per employer based on plan size, number of participants, and
+      features selected. Integrates with 350+ payroll providers.
+    price: null
+    unit: negotiated
+    features:
+      - Automated 401(k) plan administration
+      - Integration with 350+ payroll providers (ADP, Gusto, Rippling, etc.)
+      - Employee financial wellness tools
+      - Automated employee eligibility tracking and contribution management
+      - Roth, traditional, and after-tax contribution support
+progressive_discounts:
+  - tier: First $1M
+    rate_percent: 0.25
+  - tier: $1M to $2M
+    rate_percent: 0.15
+  - tier: Above $2M
+    rate_percent: 0.10
+notes:
+  - Betterment does not charge commissions on stock or ETF trades.
+  - ETF expense ratios (separate from management fees) apply to underlying funds.
+  - Outbound transfer fee of $75 per account applies.
+  - No deposit, withdrawal, or rebalancing fees beyond the plan management fee.
+  - Progressive discount tiers apply to both Digital and Premium Advisory plans.
+sources:
+  - https://www.betterment.com/pricing
+  - https://www.betterment.com/work/401k
+updated: "2026-06-13"

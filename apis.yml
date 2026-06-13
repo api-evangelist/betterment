@@ -1,0 +1,109 @@
+aid: betterment
+name: Betterment
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/betterment/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+description: >
+  Betterment is a robo-advisor and financial planning platform offering automated investment
+  management, tax-loss harvesting, retirement planning, and goal-based portfolio rebalancing.
+  Founded in 2010, Betterment serves individual investors through its Digital and Premium
+  Advisory plans, and employers through Betterment at Work — a 401(k) plan administration
+  product that integrates with 350+ payroll providers via a private partner API. Betterment
+  does not offer a public developer API; third-party application developers access Betterment
+  account data through open banking aggregators such as Plaid and BankSync. Betterment
+  Engineering maintains an active open-source presence on GitHub, publishing internal tools
+  for background job processing, split testing, Flutter golden testing, and Rails security.
+tags:
+  - Robo-Advisor
+  - Automated Investing
+  - Financial Planning
+  - Tax-Loss Harvesting
+  - Retirement Planning
+  - Portfolio Management
+  - 401k
+  - Fintech
+  - Wealth Management
+  - Investment Rebalancing
+  - Open Banking
+
+apis:
+  - name: Betterment at Work Payroll Integration API
+    description: >
+      Private partner API enabling payroll providers and HR platforms to integrate with
+      Betterment's 401(k) plan administration system. Automates employee eligibility
+      tracking, contribution deductions, and account data synchronization. Access requires
+      a formal partner onboarding agreement with Betterment. Currently integrated with
+      ADP, Gusto, Rippling, Paychex, and 350+ additional payroll providers.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.betterment.com/work/payroll-integrations
+    baseURL: https://api.betterment.com
+    tags:
+      - 401k
+      - Payroll
+      - HR Integration
+      - Retirement
+      - Partner API
+    properties:
+      - type: Documentation
+        url: https://www.betterment.com/work/payroll-integrations
+      - type: Contact
+        url: https://www.betterment.com/work/employers
+
+  - name: Betterment via Plaid (Open Banking)
+    description: >
+      Betterment investment and cash account data is accessible to third-party developers
+      via the Plaid open banking aggregator. Through Plaid, developers can retrieve account
+      balances, holdings, transaction history, and account metadata for user-authorized
+      Betterment accounts. Users authenticate directly with Betterment through Plaid Link;
+      Betterment does not expose credentials to third parties.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://plaid.com/docs/investments/
+    baseURL: https://production.plaid.com
+    tags:
+      - Open Banking
+      - Account Data
+      - Investments
+      - Transactions
+      - Plaid
+    properties:
+      - type: Documentation
+        url: https://plaid.com/docs/investments/
+      - type: Documentation
+        url: https://plaid.com/docs/api/accounts/
+
+common:
+  - type: Website
+    url: https://www.betterment.com
+  - type: Blog
+    url: https://www.betterment.com/engineering
+  - type: GitHubOrganization
+    url: https://github.com/Betterment
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/betterment/
+  - type: X
+    url: https://twitter.com/Betterment
+  - type: Pricing
+    url: https://www.betterment.com/pricing
+  - type: Contact
+    url: https://www.betterment.com/contact
+  - type: PrivacyPolicy
+    url: https://www.betterment.com/security/privacypolicy
+  - type: TermsOfService
+    url: https://wwws.betterment.com/app/terms/everyday
+  - type: DataAggregationDisclosure
+    url: https://www.betterment.com/legal/data-aggregation-disclosure
+  - type: SecurityPage
+    url: https://www.betterment.com/resources/built-two-factor-authentication-betterment-accounts/
+  - type: Plans
+    url: plans/plans.yml
+  - type: RateLimits
+    url: rate-limits/rate-limits.yml
+  - type: FinOps
+    url: finops/finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

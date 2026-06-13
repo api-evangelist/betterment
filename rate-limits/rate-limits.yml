@@ -1,0 +1,32 @@
+name: Betterment Rate Limits
+description: >
+  Betterment does not offer a public developer API with documented rate limits.
+  The platform is accessible to third-party developers via Plaid and BankSync open banking
+  aggregators, which impose their own rate limit policies. The Betterment at Work payroll
+  integration API (for 401k plan administration) is a private partner API with limits
+  communicated during the enterprise onboarding process.
+url: https://www.betterment.com/
+notes:
+  - Betterment has no publicly documented API rate limits because there is no public developer API.
+  - Third-party data access to Betterment accounts is handled through Plaid and BankSync aggregators.
+  - Betterment's data aggregation disclosure states the platform typically refreshes linked external
+    account data no more than once per day.
+  - The Betterment at Work payroll integration API (used by payroll providers such as ADP, Gusto,
+    and Rippling) is a private B2B integration; rate limits and quotas are negotiated during
+    enterprise partner onboarding.
+  - For open banking aggregation through Plaid, Plaid's default item-level rate limits apply
+    (typically 100 requests/day per linked item for most data products).
+  - Betterment's engineering team follows REST best practices with authorization-scoped endpoints
+    to prevent cross-user data access; this architectural pattern implies per-user token rate limiting
+    at the application layer.
+aggregator_access:
+  - name: Plaid
+    url: https://plaid.com
+    notes: Primary open banking aggregator; supports account balance, transaction, and holdings data for Betterment accounts.
+  - name: BankSync
+    url: https://www.banksyncinc.com
+    notes: Secondary aggregator supporting Betterment account connectivity.
+sources:
+  - https://www.betterment.com/legal/data-aggregation-disclosure
+  - https://www.openbankingtracker.com/provider/betterment
+updated: "2026-06-13"
