@@ -1,7 +1,7 @@
 aid: betterment
 name: Betterment
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/betterment/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13
@@ -37,7 +37,7 @@ apis:
       tracking, contribution deductions, and account data synchronization. Access requires
       a formal partner onboarding agreement with Betterment. Currently integrated with
       ADP, Gusto, Rippling, Paychex, and 350+ additional payroll providers.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.betterment.com/work/payroll-integrations
     baseURL: https://api.betterment.com
     tags:
@@ -59,7 +59,7 @@ apis:
       balances, holdings, transaction history, and account metadata for user-authorized
       Betterment accounts. Users authenticate directly with Betterment through Plaid Link;
       Betterment does not expose credentials to third parties.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://plaid.com/docs/investments/
     baseURL: https://production.plaid.com
     tags:
