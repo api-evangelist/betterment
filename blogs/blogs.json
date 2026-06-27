@@ -1,104 +1,13 @@
 {
-  "provider": "betterment",
-  "blogUrl": "https://www.betterment.com/engineering",
-  "lastFetched": "2026-06-13",
-  "posts": [
-    {
-      "title": "End-to-end-ish tests using fake HTTP in Flutter",
-      "url": "https://www.betterment.com/engineering/end-to-end-ish-tests-using-fake-http-in-flutter",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Flutter",
-        "Testing",
-        "HTTP",
-        "Mobile"
-      ]
-    },
-    {
-      "title": "Stability through Randomness",
-      "url": "https://www.betterment.com/engineering/stability-through-randomness",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Testing",
-        "Reliability",
-        "Engineering"
-      ]
-    },
-    {
-      "title": "Finding a Middle Ground Between Screen and UI Testing in Flutter",
-      "url": "https://www.betterment.com/engineering/flutter-screen-ui-testing",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Flutter",
-        "Testing",
-        "Mobile",
-        "UI"
-      ]
-    },
-    {
-      "title": "Why (And How) Betterment Is Using Julia",
-      "url": "https://www.betterment.com/engineering/why-betterment-is-using-julia",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Julia",
-        "Engineering",
-        "Data Science"
-      ]
-    },
-    {
-      "title": "Introducing \"Delayed\": Resilient Background Jobs on Rails",
-      "url": "https://www.betterment.com/engineering/delayed-resilient-background-jobs-on-rails",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Rails",
-        "Ruby",
-        "Background Jobs",
-        "Open Source"
-      ]
-    },
-    {
-      "title": "Focusing on What Matters: Using SLOs to Pursue User Happiness",
-      "url": "https://www.betterment.com/engineering/service-level-objectives-slo",
-      "date": null,
-      "author": null,
-      "tags": [
-        "SLO",
-        "Reliability",
-        "Observability",
-        "Engineering"
-      ]
-    },
-    {
-      "title": "Finding and Preventing Rails Authorization Bugs",
-      "url": "https://www.betterment.com/engineering/finding-and-preventing-rails-authorization-bugs",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Rails",
-        "Security",
-        "Authorization",
-        "Ruby"
-      ]
-    },
-    {
-      "title": "Using Targeted Universalism To Build Inclusive Features",
-      "url": "https://www.betterment.com/engineering/build-inclusive-features",
-      "date": null,
-      "author": null,
-      "tags": [
-        "Accessibility",
-        "Inclusion",
-        "Product Engineering"
-      ]
-    }
-  ],
   "repo": "betterment",
   "feeds": [
+    {
+      "source": "https://www.betterment.com/engineering/rss.xml",
+      "feed_url": "https://www.betterment.com/engineering/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
     {
       "source": "https://www.betterment.com",
       "feed_url": "https://www.betterment.com",
@@ -107,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 10
 }
