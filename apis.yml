@@ -75,6 +75,10 @@ apis:
         url: https://plaid.com/docs/api/accounts/
 
 common:
+  - type: TrustCenter
+    url: security/betterment-trust-center.yml
+  - type: DomainSecurity
+    url: security/betterment-domain-security.yml
   - type: Website
     url: https://www.betterment.com
   - type: Blog
