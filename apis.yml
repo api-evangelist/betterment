@@ -1,10 +1,22 @@
 aid: betterment
 name: Betterment
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betterment.png
 url: https://raw.githubusercontent.com/api-evangelist/betterment/refs/heads/main/apis.yml
 created: 2026-06-13
-modified: 2026-06-13
+modified: '2026-07-25'
 specificationVersion: "0.19"
 description: >
   Betterment is a robo-advisor and financial planning platform offering automated investment
@@ -30,28 +42,6 @@ tags:
   - Open Banking
 
 apis:
-  - name: Betterment at Work Payroll Integration API
-    description: >
-      Private partner API enabling payroll providers and HR platforms to integrate with
-      Betterment's 401(k) plan administration system. Automates employee eligibility
-      tracking, contribution deductions, and account data synchronization. Access requires
-      a formal partner onboarding agreement with Betterment. Currently integrated with
-      ADP, Gusto, Rippling, Paychex, and 350+ additional payroll providers.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.betterment.com/work/payroll-integrations
-    baseURL: https://api.betterment.com
-    tags:
-      - 401k
-      - Payroll
-      - HR Integration
-      - Retirement
-      - Partner API
-    properties:
-      - type: Documentation
-        url: https://www.betterment.com/work/payroll-integrations
-      - type: Contact
-        url: https://www.betterment.com/work/employers
-
   - name: Betterment via Plaid (Open Banking)
     description: >
       Betterment investment and cash account data is accessible to third-party developers
@@ -108,6 +98,8 @@ common:
   - type: FinOps
     url: finops/finops.yml
 
+  - type: ProductPage
+    url: https://www.betterment.com/work/payroll-integrations
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
