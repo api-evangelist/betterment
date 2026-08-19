@@ -17,7 +17,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betterment
 url: https://raw.githubusercontent.com/api-evangelist/betterment/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: '2026-07-25'
-specificationVersion: "0.19"
+specificationVersion: '0.23'
 description: >
   Betterment is a robo-advisor and financial planning platform offering automated investment
   management, tax-loss harvesting, retirement planning, and goal-based portfolio rebalancing.
