@@ -34,6 +34,18 @@ tags:
   - Financial Planning
   - Tax-Loss Harvesting
   - Retirement Planning
+  - Portfolio-Management
+  - 401k
+  - Fintech
+  - Wealth Management
+  - Investment Rebalancing
+  - Open Banking
+tags_raw:
+  - Robo-Advisor
+  - Automated Investing
+  - Financial Planning
+  - Tax-Loss Harvesting
+  - Retirement Planning
   - Portfolio Management
   - 401k
   - Fintech
@@ -53,6 +65,12 @@ apis:
     humanURL: https://plaid.com/docs/investments/
     baseURL: https://production.plaid.com
     tags:
+      - Open Banking
+      - Account Data
+      - Investments
+      - Transaction
+      - Plaid
+    tags_raw:
       - Open Banking
       - Account Data
       - Investments
