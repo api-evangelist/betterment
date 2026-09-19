@@ -78,7 +78,7 @@ apis:
     tags:
       - Open Banking
       - Account Data
-      - Investments
+      - Investment
       - Transaction
       - Plaid
     tags_raw:
