@@ -45,7 +45,7 @@ tags:
   - Financial Planning
   - Tax-Loss Harvesting
   - Retirement Planning
-  - Portfolio-Management
+  - Portfolio Management
   - 401k
   - Fintech
   - Wealth Management
@@ -63,6 +63,7 @@ tags_raw:
   - Wealth Management
   - Investment Rebalancing
   - Open Banking
+  - Portfolio-Management
 
 apis:
   - name: Betterment via Plaid (Open Banking)
