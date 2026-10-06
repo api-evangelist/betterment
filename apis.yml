@@ -27,7 +27,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/betterment.png
 url: https://raw.githubusercontent.com/api-evangelist/betterment/refs/heads/main/apis.yml
 created: 2026-06-13
-modified: '2026-07-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 description: >
   Betterment is a robo-advisor and financial planning platform offering automated investment
@@ -95,6 +95,8 @@ apis:
         url: https://plaid.com/docs/api/accounts/
 
 common:
+  - url: https://www.betterment.com/resources/rss.xml
+    type: BlogRSS
   - type: TrustCenter
     url: security/betterment-trust-center.yml
   - type: DomainSecurity
