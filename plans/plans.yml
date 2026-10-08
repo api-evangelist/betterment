@@ -79,3 +79,39 @@ sources:
   - https://www.betterment.com/pricing
   - https://www.betterment.com/work/401k
 updated: "2026-06-13"
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - period
+  plans:
+  - name: Digital (Flat Fee)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Digital (AUM-Based)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Premium Advisory
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Betterment at Work (401k)
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
