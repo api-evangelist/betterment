@@ -2,6 +2,20 @@
   "repo": "betterment",
   "feeds": [
     {
+      "source": "https://www.betterment.com/resources/rss.xml",
+      "feed_url": "https://www.betterment.com/resources/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.betterment.com/engineering",
+      "feed_url": "https://www.betterment.com/engineering/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://www.betterment.com",
       "feed_url": "https://www.betterment.com",
       "title": "",
@@ -16,7 +30,7 @@
       "method": "feed"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 13,
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
