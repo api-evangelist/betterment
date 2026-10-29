@@ -64,45 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Betterment is a robo-advisor and financial planning platform offering automated investment management, tax-loss harvesting, retirement planning, and goal-based portfolio rebalancing. Founded in 2010, Betterment manages billions in assets for individual investors through its Digital and Premium Advisory plans, and for employers through Betterment at Work — a 401(k) plan administration product.
+Betterment is a robo-advisor and financial planning platform offering automated investment management, tax-loss harvesting, retirement planning, and goal-based portfolio rebalancing. Founded in 2010, Betterment serves individual investors through its Digital and Premium Advisory plans, and employers through Betterment at Work — a 401(k) plan administration product that integrates with 350+ payroll providers via a private partner API. Betterment does not offer a public developer API; third-party application developers access Betterment account data through open banking aggregators such as Plaid and BankSync. Betterment Engineering maintains an active open-source presence on GitHub, publishing internal tools for background job processing, split testing, Flutter golden testing, and Rails security.
 
-## API Access
+**Areas:** Robo-Advisor · Automated Investing · Financial Planning · Tax-Loss Harvesting · Retirement Planning · Portfolio Management · 401k · Fintech · Wealth Management · Investment Rebalancing · Open Banking
 
-Betterment does not offer a public developer API. Third-party developers access Betterment account data through open banking aggregators:
+## Betterment on APIs.io
 
-- **[Plaid](https://plaid.com/docs/investments/)** — Primary aggregator; provides access to Betterment account balances, holdings, transactions, and account metadata.
-- **[BankSync](https://www.banksyncinc.com)** — Secondary aggregator supporting Betterment connectivity.
+Everything profiled for Betterment is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/betterment/](https://apis.io/providers/betterment/)** — or go straight to one of the APIs or properties below.
 
-The **Betterment at Work Payroll Integration API** is a private partner API used by payroll providers (ADP, Gusto, Rippling, Paychex, and 350+ others) to automate 401(k) contribution management and employee eligibility tracking. Access requires a formal onboarding agreement.
+### APIs (1)
 
-## Plans & Pricing
+- [Betterment via Plaid (Open Banking)](https://apis.io/apis/betterment/betterment-via-plaid-open-banking/) — Betterment investment and cash account data is accessible to third-party developers via the Plaid open banking aggregator. Through Plaid, developers can…
 
-| Plan | Fee |
-|------|-----|
-| Digital (under $24K, no recurring deposit) | $5/month flat |
-| Digital ($24K–$1M or $200+/month deposit) | 0.25% AUM/year |
-| Premium Advisory (min. $100K) | 0.65% AUM/year |
-| Betterment at Work (401k) | Negotiated per employer |
+### Published properties
 
-Progressive discounts apply above $1M AUM (0.15% on $1M–$2M; 0.10% above $2M).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-See [`plans/plans.yml`](plans/plans.yml) for full plan details.
+#### Security (2)
 
-## Open Source
+Authentication, trust centre, and vulnerability disclosure.
 
-Betterment Engineering maintains an active open-source presence at [github.com/Betterment](https://github.com/Betterment), including:
+- [Betterment Domain Security](https://apis.io/security/betterment/betterment-domain-security/)
+- [Betterment Trust Center](https://apis.io/security/betterment/betterment-trust-center/)
 
-- **[alchemist](https://github.com/Betterment/alchemist)** — Flutter golden testing tool
-- **[delayed](https://github.com/Betterment/delayed)** — SQL-backed ActiveJob backend processing millions of jobs/day
-- **[test_track](https://github.com/Betterment/test_track)** — Multi-platform split-testing and feature-gating system
-- **[webvalve](https://github.com/Betterment/webvalve)** — Service-oriented app development with fake HTTP services
+#### Plans and pricing (1)
 
-## Resources
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/betterment/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/betterment/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/betterment/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.betterment.com)
 - [Pricing](https://www.betterment.com/pricing)
-- [Engineering Blog](https://www.betterment.com/engineering)
-- [Betterment at Work](https://www.betterment.com/work/employers)
-- [Payroll Integrations](https://www.betterment.com/work/payroll-integrations)
-- [Data Aggregation Disclosure](https://www.betterment.com/legal/data-aggregation-disclosure)
-- [GitHub Organization](https://github.com/Betterment)
+- [Blog](https://www.betterment.com/engineering)
+- [Terms of service](https://wwws.betterment.com/app/terms/everyday)
+- [Privacy policy](https://www.betterment.com/security/privacypolicy)
+- [GitHub](https://github.com/Betterment)
+
+## API Evangelist rating
+
+**Kin Score 18.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 47.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/betterment/](https://apis.io/providers/betterment/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Betterment: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/betterment/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
